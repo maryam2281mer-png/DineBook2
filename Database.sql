@@ -79,3 +79,14 @@ ON Appointments(UserID);
 CREATE INDEX IX_Appointments_ServiceDate
 ON Appointments(ServiceID, AppointmentDate);
 GO
+
+
+INSERT INTO Users (Name, Email, Password, Phone, Role)
+VALUES (
+    'DineBook Admin',
+    'admin@dinebook.com',
+    'oTbt5aFQuofUfpMgsVGi3Q==:raJ7NHuA9Y5m4VesjxrowWzcGiLU5hj+lCJ5UyJyg0c=',
+    NULL,
+    'Admin'
+);
+
