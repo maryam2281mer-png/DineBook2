@@ -22,7 +22,7 @@
                     <a href="About.aspx">About Us</a>
                     <a href="Restaurants.aspx">Restaurants</a>
                     <a href="Contact.aspx">Contact</a>
-                    <a href="MyReservations.aspx">My Reservations</a>
+                    <a href="User/MyReservations.aspx">My Reservations</a>
                 </nav>
 
                 <div class="header-actions">
