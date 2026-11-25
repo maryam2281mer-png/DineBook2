@@ -1,0 +1,46 @@
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="DineBook.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DineBook - Restaurant Reservations</title>
+    <link href="Styles/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header class="site-header">
+            <div class="container header-content">
+                <a href="Default.aspx" class="logo">DineBook</a>
+
+                <nav class="main-nav">
+                    <a href="Default.aspx">Home</a>
+                    <a href="About.aspx">About Us</a>
+                    <a href="Restaurants.aspx">Restaurants</a>
+                    <a href="Contact.aspx">Contact</a>
+                    <a href="MyReservations.aspx">My Reservations</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="Account/Login.aspx" class="login-link">Login</a>
+                    <a href="Restaurants.aspx" class="btn-primary">Book a Table</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2026 DineBook. All rights reserved.</p>
+            <p>Restaurant reservations made simple.</p>
+        </footer>
+
+    </form>
+</body>
+</html>
