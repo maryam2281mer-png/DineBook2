@@ -90,3 +90,11 @@ VALUES (
     'Admin'
 );
 
+
+-- Prevent duplicate active reservations
+-- for the same restaurant, date, and time.
+
+CREATE UNIQUE INDEX UX_Appointments_ActiveSlot
+ON Appointments (ServiceID, AppointmentDate, AppointmentTime)
+WHERE Status <> 'Cancelled';
+
