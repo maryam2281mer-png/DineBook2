@@ -12,6 +12,7 @@ namespace DineBook
 
             lnkLogin.Visible = !isLoggedIn;
             lnkRegister.Visible = !isLoggedIn;
+            lnkLogout.Visible = isLoggedIn;
 
             lnkReservations.Visible =
                 isLoggedIn && role == "User";
