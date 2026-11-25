@@ -39,6 +39,9 @@
                     <asp:HyperLink ID="lnkLogin" runat="server"
                         NavigateUrl="~/Account/Login.aspx">Login</asp:HyperLink>
 
+                    <asp:HyperLink ID="lnkLogout" runat="server"
+                        NavigateUrl="~/Account/Logout.aspx">Logout</asp:HyperLink>
+
                     <asp:HyperLink ID="lnkRegister" runat="server"
                         NavigateUrl="~/Account/Register.aspx">Register</asp:HyperLink>
 
