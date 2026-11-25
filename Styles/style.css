@@ -172,3 +172,65 @@ a:hover {
         padding: 50px 20px;
     }
 }
+
+.site-header {
+    background-color: #ffffff;
+    padding: 18px 5%;
+    border-bottom: 1px solid #eee5df;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.site-logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #9B1C27;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #333333;
+    font-weight: 600;
+}
+
+.main-nav a:hover {
+    color: #9B1C27;
+}
+
+.site-footer {
+    background-color: #3b2022;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    margin-top: 50px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
