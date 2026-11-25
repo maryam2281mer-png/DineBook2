@@ -1,0 +1,149 @@
+/* DineBook - Main Styles */
+
+:root {
+    --cream: #FAF6F0;
+    --burgundy: #9B1C27;
+    --burgundy-dark: #78151E;
+    --white: #FFFFFF;
+    --ink: #292321;
+    --muted: #77716C;
+    --border: #E9DED4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.site-header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: var(--burgundy);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.main-nav a,
+.login-link {
+    color: var(--ink);
+    font-size: 14px;
+}
+
+.main-nav a:hover,
+.login-link:hover {
+    color: var(--burgundy);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--burgundy);
+    color: var(--white);
+    padding: 11px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: var(--burgundy-dark);
+}
+
+main {
+    min-height: 70vh;
+}
+
+.page-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    color: var(--burgundy);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin: 8px 0 18px;
+    font-size: 15px;
+}
+
+.site-footer {
+    background: var(--burgundy-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 28px 15px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .header-actions {
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
