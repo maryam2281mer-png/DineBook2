@@ -98,3 +98,40 @@ CREATE UNIQUE INDEX UX_Appointments_ActiveSlot
 ON Appointments (ServiceID, AppointmentDate, AppointmentTime)
 WHERE Status <> 'Cancelled';
 
+
+-- Sample restaurants
+INSERT INTO Services
+(ServiceName, Description, Duration, Price, ServicePhoto)
+VALUES
+(
+    'The Garden Restaurant',
+    'A relaxing restaurant offering a variety of international dishes.',
+    120, 150, NULL
+),
+(
+    'Bella Italia',
+    'Enjoy authentic Italian food, pasta, and delicious pizza.',
+    120, 180, NULL
+),
+(
+    'Ocean View',
+    'A seafood restaurant with a beautiful dining atmosphere.',
+    120, 220, NULL
+);
+
+-- Sample available reservation slots
+INSERT INTO Availability
+(ServiceID, AvailableDate, AvailableTime)
+VALUES
+(1, '2026-12-01', '18:00'),
+(1, '2026-12-01', '20:00'),
+(1, '2026-12-02', '19:00'),
+
+(2, '2026-12-01', '18:00'),
+(2, '2026-12-01', '20:00'),
+(2, '2026-12-02', '19:00'),
+
+(3, '2026-12-01', '18:00'),
+(3, '2026-12-01', '20:00'),
+(3, '2026-12-02', '19:00');
+
